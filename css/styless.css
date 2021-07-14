@@ -1,0 +1,341 @@
+* {
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+} 
+.picture {
+    background-image: url("../images/geom.jpg");
+    background-size: 120%;
+}
+@font-face {
+    font-family: fronts;
+    src: url("/fonts/firstones/Orbitron-Medium.ttf");
+}
+@media screen and (max-width: 924px) {
+    .picture {
+        background-size: 184%;
+    }
+}
+@media screen and (max-width: 686px){
+    .picture {
+        background-size: 244%;        
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/*TOP BUTTON//////////////////////*/
+#top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.548);
+    background-color: rgba(50, 107, 107, 0.795);
+    color: snow;
+    cursor: pointer;
+    padding: 15px;
+    transition: all 0.5s ease-in;
+    border-radius: 4px;
+    scroll-behavior: smooth ; 
+}
+#top:hover {
+    background-color:rgba(47, 79, 79, 0.555);
+}
+/*NAVEGATION BAR//////////////////////*/
+.wrap{
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+ul {
+    width: 100%;
+    height: 63px;
+    background-image: linear-gradient( rgb(0, 0, 0),rgb(6, 6, 6), rgb(10, 10, 10),rgb(15, 15, 15),rgb(20, 20, 20),rgb(15, 15, 15), rgb(10, 10, 10),rgb(6, 6, 6), rgb(0, 0, 0));
+    border-bottom:1px solid rgba(180, 102, 0, 0.411);
+    }
+li {
+    float: right;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    padding: 15px;
+    color: #ffffffc4;
+    font-size: 19px;
+    font-family: "Roboto", sans-serif;
+    transition: all 0.5s ease-out;
+}
+ul.bar li a {
+    color: #ffffffc4;
+    text-decoration: none;
+    display:block;
+}
+.left {
+    float: left;
+    font-weight: 23px;
+}
+ul .bar li a .tab-text{
+    margin-left: 8px;
+}  
+li:hover {
+    font-size: 21px;
+    background-image: radial-gradient(rgba(47, 79, 79, 0.795),rgba(47, 79, 79, 0), rgba(0, 0, 0, 0));
+}
+li:active {
+    background-image: linear-gradient( rgb(0, 0, 2),rgba(1, 9, 41, 0.137));
+}
+.sections{
+    margin: auto;
+}
+
+ul.secondbar li a {
+    text-decoration: none;
+    display: block;
+}
+.fa-angle-down{
+    position: relative;
+    top: 5px;
+}
+.left1 {
+    float: left;
+}
+
+.yes {
+    display: block;
+    
+}
+.no {
+    display: none;
+}
+
+/*ATTITUDE//////////////////////*/
+.attitude {
+    box-shadow: 0 8px 12px 0 rgb(0, 0, 0);
+    border-radius: 2px;
+    padding: none;
+    margin: auto;
+    background-image: linear-gradient( rgb(240, 245, 243),rgb(255, 255, 255));
+    border: 1px solid rgba(5, 146, 0, 0.562);
+    color: rgb(0, 0, 0);
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    text-align: center;  
+    box-sizing: border-box;     
+}
+.text1 {
+    margin: 0 auto;
+    padding: 37px;
+    background-color: rgb(35, 138, 223);
+    color: #ffffffc4;
+    font-weight: bold;
+}
+.text2{
+    margin: 0 auto;
+    font-weight: bold;
+    padding: 35px;
+    background-color: rgb(212, 114, 23);
+    color: #ffffffc4;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.514);
+}
+
+div div div div img {
+    vertical-align: middle;
+}
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+.slidestext {
+    background-color: rgba(214, 214, 214, 0.514);
+    color:black;
+    font-weight: bold;
+    margin: 0 auto;
+    font-size: 5vw;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50px;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.news{
+    column-count: 2;
+    column-gap: 40px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    width: 87%;
+    position: relative;
+    left: 80px;
+}
+.activee {
+    background-color:#717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from { opacity: .4}
+    to {opacity: 1}
+}
+.clicksign {
+    padding: 20px;
+    margin: 30px 0 30px;
+    border-radius: 1px;
+    cursor: pointer;
+    background-image:  linear-gradient( rgba(29, 202, 144, 0.342),rgb(29, 202, 144)); 
+    color: #212725;
+    border: 1px solid rgba(29, 202, 144, 0.822);
+}
+.clicksign:hover {
+    background-image: linear-gradient( rgba(29, 202, 144, 0.466),rgba(29, 202, 144, 0.781));
+    color: rgb(16, 42, 58);
+    border: 1px solid rgba(29, 139, 202, 0.726);
+    
+}
+
+/*FORM SIGN UP//////////////////////*/
+.imgform{
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.774);
+}
+.login-page {
+    width: 360px;
+    padding: none;
+    margin: 20px auto;  
+    box-shadow: 0 8px 12px 0 rgb(0, 0, 0); 
+}
+.formu {
+    background-image: linear-gradient( rgba(29, 202, 144, 0.418),rgba(29, 139, 202, 0.986));
+    border: 1px solid rgba(29, 202, 144, 0.822);
+    color: rgba(255, 255, 255, 0.733);
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    border-radius: 1px;
+    padding: 20px;
+    text-align: center;
+    margin:auto;
+  }
+input[type=text], select, [type=password], textarea {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background: #f2f2f2;   
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+#buttons {
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 1px;
+    cursor: pointer;
+    background-image:  linear-gradient(rgba(29, 202, 144, 0.342),rgb(29, 202, 144)); 
+    color: #212725;
+    border: 1px solid rgba(29, 202, 144, 0.822);
+}
+#buttons:hover {
+    background-image: linear-gradient( rgba(29, 202, 144, 0.466),rgba(29, 202, 144, 0.781));
+    color: rgb(16, 42, 58);
+    border: 1px solid rgba(29, 139, 202, 0.986);
+}
+#buttons:active{
+    background-color: rgba(218, 80, 0, 0.699);
+}
+form .message {
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+.message a {
+    color: #5fd863;
+    text-decoration: none;
+}
+
+/*ABOUT US//////////////////////*/
+.container {
+    background-image: linear-gradient( rgba(29, 202, 144, 0.877),rgba(29, 139, 202, 0.788));
+    border: 1px solid rgba(29, 202, 144, 0.822);
+    color: rgba(255, 255, 255, 0.733);
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    border-radius: 1px;
+    padding: 20px;
+    text-align: center;
+    width: 500px;
+    margin: 20px auto;  
+    box-shadow: 0 8px 12px 0 rgb(0, 0, 0);
+}
+.contactus {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.column1 {
+    float: left;
+    width: 50%;
+}
+.column2 {
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+}
+#subject {
+    margin: 8px 0;
+}
+/*FOOTER//////////////////////*/
+.footerr {
+    padding: 10px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin: none;
+    color: rgba(255, 255, 255, 0.733);
+    width: 100%;
+    border-top:1px solid rgba(180, 102, 0, 0.411);
+}
+#textfooter1 {
+    padding: 20px 0 5px;
+}
+
+
+
+
+
+
+
+
